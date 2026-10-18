@@ -1,0 +1,39 @@
+/* =====================================================
+   CARD ANIMATIONS  (change only the "SETTINGS" part)
+   ===================================================== */
+
+/* ---------- SETTINGS ---------- */
+:root{
+  /* Pick ONE name for all cards:
+     rise-up | fade | zoom | slide-left | slide-right | blur-in | flip-3d | bounce-up | none */
+  --card-anim: flip-3d;
+
+  /* Alternate left/right? Remove the comment marks and use these two lines instead:
+  --anim-odd: slide-left;
+  --anim-even: slide-right;
+  */
+
+  --card-speed: .67s;                              /* .4s faster, 1s slower */
+  --card-ease: cubic-bezier(.2,.7,.2,1);           /* ease-out | ease | cubic-bezier(.34,1.56,.64,1) = bounce */
+}
+
+/* ---------- ANIMATIONS (don't touch) ---------- */
+@keyframes rise-up    {from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes fade       {from{opacity:0}to{opacity:1}}
+@keyframes zoom       {from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+@keyframes slide-left {from{opacity:0;transform:translateX(-50px)}to{opacity:1;transform:none}}
+@keyframes slide-right{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:none}}
+@keyframes blur-in    {from{opacity:0;filter:blur(12px);transform:translateY(20px)}to{opacity:1;filter:none;transform:none}}
+@keyframes flip-3d    {from{opacity:0;transform:perspective(800px) rotateX(-25deg) translateY(30px)}to{opacity:1;transform:none}}
+@keyframes bounce-up  {0%{opacity:0;transform:translateY(40px)}60%{opacity:1;transform:translateY(-8px)}100%{opacity:1;transform:none}}
+
+/* ---------- ENGINE (don't touch) ---------- */
+
+.card.reveal{opacity:0}
+.card.reveal.in{
+  opacity:1;
+  animation:var(--anim-odd,var(--card-anim)) var(--card-speed) var(--card-ease) backwards;
+  animation-delay:var(--d,0s);
+}
+.card.reveal.in:nth-child(even){animation-name:var(--anim-even,var(--card-anim))}
+@media (prefers-reduced-motion:reduce){.card.reveal{opacity:1}.card.reveal.in{animation:none}}

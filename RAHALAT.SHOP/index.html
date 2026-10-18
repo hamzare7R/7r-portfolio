@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rahalat Shop | Camping, hiking and outdoor gear</title>
+  <meta name="description" content="Handpicked camping, hiking and water gear from top-rated AliExpress sellers. Tents, sleeping bags, stoves, shoes and more.">
+  <meta property="og:title" content="Rahalat Shop">
+  <meta property="og:description" content="Handpicked camping, hiking and water gear from top-rated AliExpress sellers.">
+  <meta property="og:image" content="images/logoR.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="images/logoR.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+   <script src="intro.js"></script>
+  <header class="top">
+    <a class="logo" href="#"><img src="images/logoR.jpeg" alt="Rahalat Shop logo"><span>Rahalat Shop</span></a>
+    <label class="search"><input id="q" type="search" data-i18n-ph="search" placeholder="Search tents, shoes, stoves..." aria-label="Search"></label>
+    <a id="favLink" class="ghost" href="#favSection" hidden aria-label="Favorites">♥ <span id="favCount">0</span></a>
+    <button id="lang" class="ghost" type="button">AR</button>
+    <button id="theme" class="ghost" type="button" aria-label="Dark mode">🌙</button>
+    <a class="pill" href="#contact" data-i18n="contact">Contact</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-i18n="heroTitle">Gear that goes further than the trail.</h1>
+      <p data-i18n="heroText">Handpicked camping, hiking and water gear from top-rated AliExpress sellers. Pick it, tap it, get it shipped.</p>
+      <a class="cta" href="#shop" data-i18n="browse">Browse the gear</a>
+    </div>
+    <ul class="stats">
+      <li><b>25</b> <span data-i18n="products">products</span></li>
+      <li><b>4.5★</b> <span data-i18n="rating">seller rating</span></li>
+      <li><b>8</b> <span data-i18n="cats">categories</span></li>
+    </ul>
+  </section>
+
+  <ul class="trust">
+    <li data-i18n="t1">Fast shipping</li>
+    <li data-i18n="t2">Secure payment on AliExpress</li>
+    <li data-i18n="t3">Trusted, top-rated sellers</li>
+  </ul>
+
+  <section class="block">
+    <h2 data-i18n="featured">Featured gear</h2>
+    <div id="featured" class="grid"></div>
+  </section>
+
+  <section id="favSection" class="block" hidden>
+    <h2 data-i18n="favT">Your favorites</h2>
+    <div id="favGrid" class="grid"></div>
+  </section>
+
+  <main id="shop" class="block">
+    <h2 data-i18n="all">All gear</h2>
+    <nav id="filters" class="filters" aria-label="Categories"></nav>
+    <p id="count" class="count"></p>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <section class="block about">
+    <h2 data-i18n="aboutT">About Rahalat Shop</h2>
+    <p data-i18n="aboutP">Rahalat Shop is based in Tangier, Morocco. We pick outdoor gear from top-rated AliExpress sellers, so you don't have to search through thousands of listings.</p>
+  </section>
+
+  <section class="block faq">
+    <h2 data-i18n="faqT">Questions</h2>
+    <details>
+      <summary data-i18n="q1">Do you sell the products directly?</summary>
+      <p data-i18n="a1">No. Every product links to the seller on AliExpress. You pay and receive your order there.</p></details>
+    <details><summary data-i18n="q2">How long does delivery take?</summary>
+      <p data-i18n="a2">Each seller sets it. You'll see the delivery estimate on the AliExpress product page.</p></details>
+    <details><summary data-i18n="q3">I need help choosing a product.</summary>
+      <p data-i18n="a3">Message us on WhatsApp and we'll help you pick.</p> </details>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-i18n="contactT">Let's work together</h2>
+    <p data-i18n="contactP">Questions about a product or an order? Reach out and let's talk.</p>
+    <ul>
+      <li><span>Location</span>Tangier, Morocco</li>
+      <li><span>Email</span><a href="mailto:contacthamzar7r@gmail.com">contacthamzar7r@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+212688962517" dir="ltr">+212 688-962517</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/hamza-reggaoui-7r01h" target="_blank" rel="noopener">linkedin.com/in/hamza-reggaoui-7r01h</a></li>
+      <li><span>Instagram</span><a href="https://www.instagram.com/rahalat.shop" target="_blank" rel="noopener">@rahalat.shop</a></li>
+    </ul>
+  </section>
+
+  <footer><p data-i18n="foot">Rahalat Shop uses affiliate links. Prices and shipping are set by the sellers on AliExpress.</p></footer>
+
+  <dialog id="modal"></dialog>
+
+  <a class="fab" href="https://wa.me/212688962517" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.100-.6.800-.8 1-.3.200-.6.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.1 0-.3 0-.4l-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
+  <script src="reveal.js"></script>
+</body>
+</html>

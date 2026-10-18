@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khotwa | خطوة – Online fitness coaching (Concept)</title>
+    <meta
+      name="description"
+      content="Khotwa: workout and nutrition programs for beginners with a weekly check-in. A concept project by Hamza R."
+    />
+    <meta name="theme-color" content="#0F1B2D" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230F1B2D'/%3E%3Crect x='5' y='20' width='5' height='7' fill='%23B6F24A' opacity='.45'/%3E%3Crect x='13' y='14' width='5' height='13' fill='%23B6F24A' opacity='.7'/%3E%3Crect x='21' y='8' width='5' height='19' fill='%23B6F24A'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Khotwa">
+          <svg class="brand-mark" viewBox="0 0 36 32" width="36" height="32" aria-hidden="true">
+            <rect x="4" y="20" width="6" height="8" fill="#B6F24A" opacity="0.45" />
+            <rect x="13" y="14" width="6" height="14" fill="#B6F24A" opacity="0.7" />
+            <rect x="22" y="8" width="6" height="20" fill="#B6F24A" />
+            <path d="M25 1 L30.5 7 H19.5 Z" fill="#B6F24A" />
+          </svg>
+          <span class="brand-name" data-i18n="brand">خطوة</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#how" data-i18n="nav.how">كيف نشتغل</a>
+          <a href="#programs" data-i18n="nav.programs">البرامج</a>
+          <a href="#faq" data-i18n="nav.faq">أسئلة شائعة</a>
+        </nav>
+<div class="header-actions">
+          <!-- زر تبديل الوضع الداكن/الفاتح -->
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="تبديل وضع الألوان">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button class="lang-btn active" type="button" data-lang="ar" aria-pressed="true">AR</button>
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="btn btn-primary btn-small" href="#contact" data-i18n="cta.header">احجز مكالمة</a>
+        </div>
+
+      </div>
+
+
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 data-i18n="hero.title">ابدأ بخطوة واحدة اليوم.</h1>
+            <p class="hero-text" data-i18n="hero.text">
+              برامج تمارين وتغذية للمبتدئين، مع متابعة أسبوعية تعدّل الخطة حسب تقدمك.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact" data-i18n="hero.primary">احجز مكالمة مجانية</a>
+              <a class="btn btn-ghost" href="#programs" data-i18n="hero.secondary">تصفح البرامج</a>
+            </div>
+            <ul class="facts">
+              <li data-i18n="facts.time">من 30 دقيقة في اليوم</li>
+              <li data-i18n="facts.equipment">بدون معدات في البداية</li>
+              <li data-i18n="facts.checkin">متابعة كل أسبوع</li>
+            </ul>
+          </div>
+
+          <figure class="hero-visual">
+            <ol class="stairs" id="stairs" role="img" data-i18n-aria="stairs.label" aria-label="رسم يوضح 8 أسابيع من التقدم">
+              <li style="--i: 1"><span class="bar"></span><span class="wk">1</span></li>
+              <li style="--i: 2"><span class="bar"></span><span class="wk">2</span></li>
+              <li style="--i: 3"><span class="bar"></span><span class="wk">3</span></li>
+              <li style="--i: 4"><span class="bar"></span><span class="wk">4</span></li>
+              <li style="--i: 5"><span class="bar"></span><span class="wk">5</span></li>
+              <li style="--i: 6"><span class="bar"></span><span class="wk">6</span></li>
+              <li style="--i: 7"><span class="bar"></span><span class="wk">7</span></li>
+              <li style="--i: 8"><span class="bar"></span><span class="wk">8</span></li>
+            </ol>
+            <figcaption data-i18n="stairs.caption">تقدّم تدريجي، أسبوع بعد أسبوع</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <div class="container">
+          <h2 data-i18n="how.title">ثلاث خطوات فقط</h2>
+          <ol class="how-list">
+            <li>
+              <span class="how-num" aria-hidden="true">1</span>
+              <h3 data-i18n="how.s1.title">مكالمة تعارف</h3>
+              <p data-i18n="how.s1.text">15 دقيقة نحدد فيها هدفك ومستواك والوقت المتاح لك.</p>
+            </li>
+            <li>
+              <span class="how-num" aria-hidden="true">2</span>
+              <h3 data-i18n="how.s2.title">برنامجك الخاص</h3>
+              <p data-i18n="how.s2.text">تتوصل ببرنامج تمارين ودليل تغذية بسيط، مكتوبين لمستواك.</p>
+            </li>
+            <li>
+              <span class="how-num" aria-hidden="true">3</span>
+              <h3 data-i18n="how.s3.title">متابعة أسبوعية</h3>
+              <p data-i18n="how.s3.text">كل أسبوع ترسل تقدمك، وأعدّل لك الأسبوع الجاي.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="programs">
+        <div class="container">
+          <h2 data-i18n="programs.title">اختر مدة برنامجك</h2>
+          <p class="section-note" data-i18n="programs.note">الأسعار هنا أمثلة لهذا المشروع التصوري.</p>
+
+          <div class="plans">
+            <article class="plan plan-1" data-plan="1">
+              <h3 data-i18n="plan1.name">ابدأ</h3>
+              <p class="plan-length" data-i18n="plan1.length">4 أسابيع</p>
+              <p class="plan-price" data-i18n="plan1.price">199 درهم</p>
+              <ul>
+                <li data-i18n="plan1.f1">3 حصص في الأسبوع</li>
+                <li data-i18n="plan1.f2">دليل تغذية بسيط</li>
+                <li data-i18n="plan1.f3">متابعة مرة في الأسبوع</li>
+              </ul>
+              <button class="btn plan-btn" type="button" aria-pressed="false"><span class="when-off" data-i18n="plan.choose">اختر هذا البرنامج</span><span class="when-on" data-i18n="plan.selected">تم الاختيار</span></button>
+            </article>
+
+            <article class="plan plan-2 is-selected" data-plan="2">
+              <p class="plan-flag" data-i18n="plan2.flag">موصى به للمبتدئين</p>
+              <h3 data-i18n="plan2.name">تقدّم</h3>
+              <p class="plan-length" data-i18n="plan2.length">8 أسابيع</p>
+              <p class="plan-price" data-i18n="plan2.price">349 درهم</p>
+              <ul>
+                <li data-i18n="plan2.f1">كل ما في برنامج ابدأ</li>
+                <li data-i18n="plan2.f2">تعديل البرنامج كل أسبوع</li>
+                <li data-i18n="plan2.f3">تمارين للبيت أو للنادي</li>
+              </ul>
+              <button class="btn plan-btn" type="button" aria-pressed="true"><span class="when-off" data-i18n="plan.choose">اختر هذا البرنامج</span><span class="when-on" data-i18n="plan.selected">تم الاختيار</span></button>
+            </article>
+
+            <article class="plan plan-3" data-plan="3">
+              <h3 data-i18n="plan3.name">التزام</h3>
+              <p class="plan-length" data-i18n="plan3.length">12 أسبوعًا</p>
+              <p class="plan-price" data-i18n="plan3.price">499 درهم</p>
+              <ul>
+                <li data-i18n="plan3.f1">كل ما في برنامج تقدّم</li>
+                <li data-i18n="plan3.f2">دردشة للأسئلة بين المتابعات</li>
+                <li data-i18n="plan3.f3">مراجعة شهرية للأهداف</li>
+              </ul>
+              <button class="btn plan-btn" type="button" aria-pressed="false"><span class="when-off" data-i18n="plan.choose">اختر هذا البرنامج</span><span class="when-on" data-i18n="plan.selected">تم الاختيار</span></button>
+            </article>
+          </div>
+
+          <div class="plan-summary" role="status" aria-live="polite">
+            <p>
+              <span data-i18n="summary.label">البرنامج المختار:</span>
+              <strong id="selectedPlanName"></strong>
+            </p>
+            <a class="btn btn-primary" href="#contact" data-i18n="summary.continue">تابع للحجز</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq-wrap">
+          <h2 data-i18n="faq.title">أسئلة شائعة</h2>
+          <div class="faq-list">
+            <details>
+              <summary data-i18n="faq.q1">هل احتاج الى نادي رياضي؟</summary>
+              <p data-i18n="faq.a1"> لا، تتضمن البرامج خيارات للتدريب في المنزل بمعدات بسيطة أو بدونها، بالإضافة إلى خيارات مخصصة للنادي الرياضي إذا كنت مشتركاً. </p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q2">كم احتاج من الوقت؟</summary>
+              <p data-i18n="faq.a2">تتراوح مدة الحصة بين 30 و 45 دقيقة، بمعدل ثلاثة أيام في الأسبوع في البداية.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q3">هل مناسب للمبتدئين؟</summary>
+              <p data-i18n="faq.a3">نعم، كل تمرين متبوع بشرح مفصل، وستبدأ بالتدرج وفقاً لمستواك الحالي.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q4">كيف تكون المتابعة الأسبوعية؟</summary>
+              <p data-i18n="faq.a4">ترسل تقرير تقدمك وتجيب عن أسئلة قصيرة مرة واحدة في الأسبوع، وبناءً على ذلك أعدّل لك خطة الأسبوع القادم.</p>
+            </details>
+          </div>
+          <p class="health-note" data-i18n="faq.health">قبل البدء، استشر طبيبك إذا كانت عندك أي حالة صحية.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-inner">
+          <h2 data-i18n="contact.title">جاهز للخطوة الأولى؟</h2>
+          <p data-i18n="contact.text">احجز مكالمة تعارف مجانية مدتها 15 دقيقة، بلا التزام.</p>
+          <div class="cta-row">
+            <!-- TODO: replace with the real WhatsApp number (international format, no + or spaces) -->
+            <a class="btn btn-dark" href="https://wa.me/212688962517" target="_blank" rel="noopener" data-i18n="contact.whatsapp">تواصل عبر واتساب</a>
+            <!-- TODO: replace with the real email address -->
+            <a class="btn btn-outline-dark" href="mailto:hello@khotwa.example" data-i18n="contact.email">أرسل بريدًا</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 <span data-i18n="brand">خطوة</span></p>
+        <p data-i18n="footer.concept">مشروع تصوري: علامة خيالية صمّمها وبرمجها حمزة ر.</p>
+
+        <a href="https://www.instagram.com/7r01h?stkn=MThweGR0MmlvaXY2Nw%3D%3D" target="_blank" rel="noreferrer">Instagram</a>
+
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
